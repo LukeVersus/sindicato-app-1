@@ -131,11 +131,12 @@
                                     </tfoot>
                                     <tbody id="table_body">
                                         <% for (var i = 0; i < itensDois.length; i++) { %>
-                                        <tr>
+                                        <tr>   
                                             <td><%= itensDois[i].cpf %></td>
-                                            <td><%= itensDois[i].nome %></td>
+                                            <td><%= itensDois[i].nome %></td>                                            
+                                            <td><%= itensDois[i].status %></td>                                            
                                             <td>
-                                                <a href="/app/<%= page %>/edit/<%= itensDois[i].id %>"
+                                                <a href="/app/<%= page %>/edit-pre-cadastro/<%= itensDois[i].id %>"
                                                     class="btn btn-warning btn-circle btn-sm" data-toggle="tooltip"
                                                     data-placement="left" title="Editar">
                                                     <i class="fas fa-edit"></i>

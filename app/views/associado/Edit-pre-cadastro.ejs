@@ -84,7 +84,7 @@
 								<div class="card-body">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
-											<form class="user" method="POST" action="/app/<%= page %>/edit/submit">
+											<form class="user" method="POST" action="/app/<%= page %>/edit-pre-cadastro/submit">
 
 												<fieldset
 													style="border: 1px groove #FFF !important; padding: 0 1.4em 1.4em 1.4em !important; margin: 0 0 1.5em 0 !important;">
@@ -113,7 +113,8 @@
 																		<option value="APROVAR">Aprovar</option>
 																		<option value="AGUARDAR_DOCUMENTOS">Aguardar Documentos</option>
 																		<option value="REJEITAR">Rejeitar</option>
-																		<option value="SOLICITAR_COMPLEMENTO">Solicitar Complemento</option>																														
+																		<option value="SOLICITAR_COMPLEMENTO">Solicitar Complemento</option>
+																		<option value="PRE_CADASTRADO">Pré-Cadastrado</option>																		
 																	</select>
 																</div>
 															</div>
@@ -398,7 +399,7 @@
 													<div class="col-sm-4">
 														<input type="submit" value="Salvar"
 															class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" />
-														<a href="/app/<%= page %>/list"
+														<a href="/app/<%= page %>/pre-cadastro"
 															class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">Cancelar</a>
 													</div>
 												</div>
